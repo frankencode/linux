@@ -60,6 +60,7 @@ config FB_TFT_ILI9340
 config FB_TFT_ILI9341
 	tristate "FB driver for the ILI9341 LCD Controller"
 	depends on FB_TFT
+	default m
 	help
 	  Generic Framebuffer support for ILI9341
 
@@ -156,7 +157,7 @@ config FB_TFT_UPD161704
 config FB_TFT_WATTEROTT
 	tristate "FB driver for the WATTEROTT LCD Controller"
 	depends on FB_TFT
-    default y
+    default m
 	help
 	  Generic Framebuffer support for WATTEROTT
 
@@ -169,3 +170,4 @@ config FB_FLEX
 config FB_TFT_FBTFT_DEVICE
 	tristate "Module to for adding FBTFT devices"
 	depends on FB_TFT
+	default m
